@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+#  VBGA (Vulnerabilities beginner guide app)
 
-You can use the [editor on GitHub](https://github.com/sechelper/vbga.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+漏洞入门指南应用程序（VBGA）是一个集成所有Web应用基础漏洞的程序。其主要目标是帮助安全人员在法律允许的条件下入门学习渗透技能，并帮助教师/学生在真实的漏洞环境内教授/学习基础web应用程序安全知识。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 安装使用
 
-### Markdown
+由于目前VBGA还不是很成熟，暂时闭源管理，但我们可以为您提供安装包，预计22年底前会开源，扫描二维码加入群聊。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![vulab-vbga](https://official-accounts.oss-cn-beijing.aliyuncs.com/img/qrcode/vulab-vbga.png)
 
-```markdown
-Syntax highlighted code block
+### 使用vulab靶场安装
 
-# Header 1
-## Header 2
-### Header 3
+[vulab靶场]()快速启动`VBGA`环境，创建`vbga.yml`文件写入以下内容
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```yml
+version: "3.3"
+services:
+  vbga:
+    image: sechelper/vulab:vbga-v1.0.0
+    ports:
+      - 8080:8080
+      - 3306:3306
+    volumes:
+      - /opt/jdk-17.0.3.1/:/opt/jdk17
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+启动实验环境
 
-### Jekyll Themes
+```bash
+sudo docker-compose -f vbga.yml up
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sechelper/vbga.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 免责声明
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+我们不对任何人使用VBGA行为负责，在前文已经明确此应用程序的目的。禁止将VBGA安装到生产环境内，如果您的服务器由于安装 VBGA受到损害，我们对此没有任何的责任，而是安装管理人的责任。
