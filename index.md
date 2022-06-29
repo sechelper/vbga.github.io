@@ -8,9 +8,9 @@
 
 ![vulab-vbga](img/qrcode-vulab-vbga.png)
 
-### 使用vulab靶场安装
+### 使用vulab靶场快速安装vbga
 
-[vulab靶场]()快速启动`VBGA`环境，创建`vbga.yml`文件写入以下内容
+[vulab靶场](https://vulab.io/)快速启动`VBGA`环境，创建`vbga.yml`文件写入以下内容
 
 ```yml
 version: "3.3"
