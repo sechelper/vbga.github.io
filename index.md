@@ -6,7 +6,7 @@
 
 由于目前VBGA还不是很成熟，暂时闭源管理，但我们可以为您提供安装包，预计22年底前会开源，扫描二维码加入群聊。
 
-![vulab-vbga](https://official-accounts.oss-cn-beijing.aliyuncs.com/img/qrcode/vulab-vbga.png)
+![vulab-vbga](img/qrcode-vulab-vbga.png)
 
 ### 使用vulab靶场安装
 
