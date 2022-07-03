@@ -10,26 +10,18 @@
 
 ### 使用vulab靶场快速安装vbga
 
-[vulab靶场](https://vulab.io/)快速启动`VBGA`环境，创建`vbga.yml`文件写入以下内容
+[vulab靶场](https://vulab.io/)快速启动`VBGA`环境
 
-```yml
-version: "3.3"
-services:
-  vbga:
-    image: sechelper/vulab:vbga-v1.0.0
-    ports:
-      - 8080:8080
-      - 3306:3306
-    volumes:
-      - /opt/jdk-17.0.3.1/:/opt/jdk17
+```bash
+wget http://repository.vulab.io/vulab/vbga/1.0.1/docker-compose.yml
 ```
 
 启动实验环境
 
 ```bash
-sudo docker-compose -f vbga.yml up
+sudo docker-compose up
 ```
 
 ### 免责声明
 
-我们不对任何人使用VBGA行为负责，在前文已经明确此应用程序的目的。禁止将VBGA安装到生产环境内，如果您的服务器由于安装 VBGA受到损害，我们对此没有任何的责任，而是安装管理人的责任。
+我们不对任何人使用VBGA行为负责，在前文已经明确此应用程序的目的。禁止将VBGA安装到生产环境内，如果您的服务器由于安装VBGA受到损害，我们对此没有任何的责任，而是安装管理人的责任。
